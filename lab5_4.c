@@ -1,14 +1,14 @@
 #include <stdio.h>
 #define N 10
 int main() {
-    double re[N] = {-105, 1111, -10101, 5555, 11, 10, 999, 90, 666, -10};
-    double im[N] = {7887, -1111, 526, 9090, 1234, 322, -322, 888, 8181, -1};
+    int re[N] = {-105, 1111, -10101, 5555, 11, 10, 999, 90, 666, -10};
+    int im[N] = {7887, -1111, 526, 9090, 1234, 322, -322, 888, 8181, -1};
     double energy = 0;
     int max_re = re[0];
     int max_index = 0;
     printf("отсчёты сигнала:\n");
     for (int i = 0; i < N; i++){
-        printf("s[%d] = %.1f + j*(%.1f)\n", i, re[i], im[i]);
+        printf("s[%d] = %d.0 + j*(%d.0)\n", i, re[i], im[i]);
     }
 
     for (int i = 0; i < N; i++) {
